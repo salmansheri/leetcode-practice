@@ -1,14 +1,16 @@
-def contains_duplicate(arr):
-    hashSet = set()
+class Solution:
+    def ContainDuplicates(self, arr):
+        hashSet = set()
 
-    for i in arr:
-        if i in hashSet:
-            return True
+        for num in arr:
+            if num in hashSet:
+                return True
 
-        hashSet.add(i)
+            hashSet.add(num)
 
-    return False
-
+        return False
 
 arr = [1, 1, 2, 3]
-print(contains_duplicate(arr))
+solution = Solution()
+print(solution.ContainDuplicates(arr))
+
